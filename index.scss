@@ -1,0 +1,94 @@
+@import "variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Epilogue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Contained section */
+.contained {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+/* Full-width section */
+.full-width {
+  width: 100%;
+  text-align: center;
+}
+
+// Alignments section
+.content {
+  padding: 100px 135px;
+}
+
+
+@media (max-width: 1025px) {
+  .content {
+    padding: 50px 70px;
+  }
+}
+
+@media (max-width: 769px) {
+  .content {
+    padding: 30px 15px;
+  }
+}
+
+.main {
+  background-color: $primary-color;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.btn {
+  background-color: $primary-color;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20.5px;
+  padding: 10px 20px;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $primary-color;
+}
+
+@import "page.scss";
+@import "slide.scss";
